@@ -46,10 +46,12 @@
         didacticpatternvisualizer = pkgs.stdenv.mkDerivation {
           name = "didacticpatternvisualizer";
           src = inputs.didacticpatternvisualizer;
+          preBuild = ''
+            sed -e '18s/1280,360/1880,1040/' -i "didacticpatternvisualizer/didacticpatternvisualizer.pde"
+          '';
           installPhase = ''
             mkdir -p "$out"
-            cp -pr "$src/didacticpatternvisualizer" "$out/"
-            sed -e '18s/1280,360/1880,1040/' -i "$out/didacticpatternvisualizer/didacticpatternvisualizer.pde"
+            cp -pr "didacticpatternvisualizer" "$out/"
           '';
           meta = {
             homepage = https://github.com/ivan-abreu/didacticpatternvisualizer/;
