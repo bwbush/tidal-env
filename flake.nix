@@ -49,6 +49,7 @@
           installPhase = ''
             mkdir -p "$out"
             cp -pr "$src/didacticpatternvisualizer" "$out/"
+            sed -e '18s/1280,360/1880,1040/' -i "$out/didacticpatternvisualizer/didacticpatternvisualizer.pde"
           '';
           meta = {
             homepage = https://github.com/ivan-abreu/didacticpatternvisualizer/;
