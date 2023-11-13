@@ -27,3 +27,8 @@ Use `ctl-E` to execute lines in neovim.
 4. Press the play button.
 
 Use `rm sketchbook/didacticpatternvisualizer sketchbook/libraries/oscP5` to clear links to the visualizer libraries.
+
+
+## Troubleshooting
+
+Use `alsamixer` to select sound card and set volumes.

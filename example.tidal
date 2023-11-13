@@ -1,5 +1,6 @@
 :script BootTidal.hs
 
+
 d1 $ s "bd ab pluck ab pluck pluck"
 
 do
@@ -15,10 +16,10 @@ do
   d3 $ every 3 ( density 8 ) $ density 2 $ n "<[d4,e2,g2] [d4,e4,g2]?>"
      # s "superfork"  # connectionN 3
 
-hush
-
-
 do
   d1 $ sound "arpy arpy arpy:1 arpy:2" # connectionN 1
   d2 $ hurry 2 $ sound "arpy arpy arpy:1 arpy:2" # connectionN 2
   d3 $ hurry 0.5 $ sound "arpy arpy arpy:1 arpy:2" # connectionN 3
+
+
+hush
