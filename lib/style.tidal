@@ -1,0 +1,8 @@
+
+let inStyle = note "e6_6 d6_2 e6 d6_2 c6_7  e6_6 d6_2 e6 d6 c6_8  d6_2 c6 g5_3 a5_6"
+
+do
+  hush
+  setcps 0.2
+  d1 $ inStyle
+     # s "arpy"
