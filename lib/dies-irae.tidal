@@ -1,8 +1,29 @@
 
-let diesIrae = note "f3_2 e3_2 f3_2 d3_2 e3_2 c3_2 d3 d3_3"
+:{
 
-do
-  hush
-  setcps 0.2
-  d1 $ diesIrae
-     # sound "arpy"
+let
+  diesIrae =
+    note
+      . cat
+      $ fmap snd
+      [
+        ( 1, "f4 e4 f4 d4 e4 c4 d4 d4_3")
+      , ( 2, "f4 f4 g4 f4 e4 d4 c4 e4 f4 e4 d4_3")
+      , ( 3, "a3 c4 d4 d4 c4 e4 f4 e4 d4_3")
+      , ( 0, "~_4")
+      ]
+
+:}
+
+:{
+
+let
+  test =
+    do
+      hush
+      d1 . fast 1.5
+         $ diesIrae
+         # sound "superpiano"
+
+:}
+

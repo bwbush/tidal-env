@@ -1,9 +1,19 @@
 
+:{
+
+let claveSon= note "0 ~ ~ 1 ~ ~ 2 ~ ~ ~ 3 ~ 4 ~ ~ ~"
+
+:}
+
+:{
+
 let
-  claveSon= note "0 ~ ~ 1 ~ ~ 2 ~ ~ ~ 3 ~ 4 ~ ~ ~"
-in
-  do
-    hush
-    d1 . fast 0.67
-       $ claveSon
-       # sound "<hh bd arpy supermandolin>"
+  test =
+    do
+      hush
+      d1 . fast 2
+         $ claveSon
+         # sound "superpiano"
+
+:}
+
