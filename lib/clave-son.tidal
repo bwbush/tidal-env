@@ -11,7 +11,7 @@ let
   test =
     do
       hush
-      d1 . fast 2
+      d1 . fast 1
          $ claveSon
          # sound "superpiano"
 

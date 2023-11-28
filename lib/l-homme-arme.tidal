@@ -46,11 +46,12 @@ let
 :}
 
 :{
+
 let
   test =
     do
       hush
-      d1 . fast 5
+      d1 . fast 2
          $ lHommeArme
          # sound "superpiano"
 
