@@ -1,0 +1,68 @@
+
+do
+  asap $ connectionMax 5 # speedSequenser 4
+  hush
+  setcps 0.2
+  d1 . slow 2
+     $ note "e6_6 d6_2 e6 d6_2 c6_7  e6_6 d6_2 e6 d6 c6_8  d6_2 c6 g5_3 a5_6"
+     # s "supermandolin"
+     # sustain 3
+     # connectionN 1
+  d2 . slow 1
+     $ sound "industrial cp hh drum"
+     # gain "0.5 1 1"
+     # connectionN 2
+  d3 . slow "<2 3>"
+     $ note "f3_2 e3_2 f3_2 d3_2 e3_2 c3_2 d3 d3_3"
+     # sound "<arpy superpiano>"
+     # vowel "<a e o>"
+     # sustain "<1 2 3>"
+     # connectionN 3
+  d4 . fast 1.5
+     $ sound "kurt:4 kurt:4"
+     # shape "0 0.78"
+     # gain "0.7"
+     # connectionN 4
+  d5 $ s "{bd sd stab, cp arpy cr arpy}"
+     # connectionN 5
+
+do
+  asap $ connectionMax 1 # speedSequenser 4
+  setcps 0.2
+  hush
+  d1 $ note "f3_2 e3_2 f3_2 d3_2 e3_2 c3_2 d3 d3_3"
+     # sound "metal"
+     # connectionN 1
+
+do
+  asap $ connectionMax 1 # speedSequenser 4
+  hush
+  d1 $ s "{bd sd stab, cp arpy cr arpy}"
+     # connectionN 1
+
+do
+  asap $ connectionMax 2 # speedSequenser 4
+  hush
+  setcps 0.2
+  d1 . slow 2
+     $ note "e6_6 d6_2 e6 d6_2 c6_7  e6_6 d6_2 e6 d6 c6_8  d6_2 c6 g5_3 a5_6"
+     # s "supermandolin"
+     # sustain 3
+     # connectionN 1
+  d2 . slow "<2 3>"
+     $ note "f3_2 e3_2 f3_2 d3_2 e3_2 c3_2 d3 d3_3"
+     # sound "<arpy superpiano>"
+     # vowel "<a e o>"
+     # sustain "<1 2 3>"
+     # connectionN 3
+
+do
+  asap $ connectionMax 1 # speedSequenser 4
+  hush
+  setcps 0.2
+  d1 . slow 2
+     $ note "{f3_2 e3_2 f3_2 d3_2 e3_2 c3_2 d3 d3_3, e6_6 d6_2 e6 d6_2 c6_7  e6_6 d6_2 e6 d6 c6_8  d6_2 c6 g5_3 a5_6}"
+     # s "supermandolin"
+     # sustain 3
+     # connectionN 1
+

@@ -1,0 +1,47 @@
+
+:{
+
+let
+  diesIrae =
+    note
+      . cat
+      $ fmap snd
+      [
+        ( 1, "f4_2 e4_2 f4_2 d4_2 e4_2 c4_2 d4_2 d4_6")                                          -- Dies irae, dies illa.
+      , ( 2, "f4_2 f4_2 g4_2 f4_2 e4_2 d4_2 c4_2 e4_2 f4_2 e4_2 d4_6")                           -- Solvet saclum in favila.
+      , ( 3, "a3_2 c4_2 d4_2 d4_2 c4_2 e4_2 f4_2 e4_2 d4_6")                                     -- Teste David cum Sybilla.
+      , ( 4, "f4_2 e4_2 f4_2 d4_2 e4_2 c4_2 d4_2 d4_6")                                          -- Quantus tremor est futurus.
+      , ( 5, "f4_2 f4_2 g4_2 f4_2 e4_2 d4_2 c4_2 e4_2 f4_2 e4_2 d4_6")                           -- Quando judex est venturus.
+      , ( 6, "a3_2 c4_2 d4_2 d4_2 c4_2 e4_2 f4_2 e4_2 d4_6")                                     -- Cuncta stricte discussurus.
+      , ( 7, "a4_2 c5_2 c5_2 b4_2 a4_2 g4_2 a4_4 a4_2 g4 f4 g4_2 a4_4 d_6")                      -- Tuba mirum spargens sonum.
+      , ( 8, "f4_2 e4_2 f4_2 d4_2 e4_2 c4_2 d4_2 d4_6")                                          -- Per sepulcra regionum.
+      , ( 9, "f4_2 g4_2 a4_2 a4_2 g4 f4 e4_2 d4 c4 e4_2 f4_2 e4_2 d4_6")                         -- Coget omnes ante thronum.
+      , (10, "a4_2 c5_2 c5_2 b4_2 a4_2 g4_2 a4_4 a4_2 g4 f4 g4_2 a4_4 d_6")                      -- Mors stupebit et natura.
+      , (11, "f4_2 e4_2 f4_2 d4_2 e4_2 c4_2 d4_2 d4_6")                                          -- Cum resurget creatura.
+      , (12, "f4_2 g4_2 a4_2 a4_2 g4 f4 e4_2 d4 c4 e4_2 f4_2 e4_2 d4_6")                         -- Judicanti responsatura.
+      , (13, "a4_2 g4_2 f4_2 g4_2 a4_4 d4_2 d4_2 c4_2 a3_2 c4_2 d4_2 d4_6")                      -- Ora supplex et ac clinis.
+      , (14, "f4_2 e4_2 d4_2 c4_2 a3_4 c4_2 d4_2 f4_2 e4_2 d4_2 c4_4 d4_6")                      -- Cor contrium quasi cinis.
+      , (15, "a4_2 f4_2 g4_2 d4_4 c4_2 d4_2 f4_2 e4_2 d4_2 c4_2 d4_6")                           -- Gere cuam mei finis.
+      , (16, "d4_2 a4_2 a4_4 bf4_2 a4_2 g4_2 f4_4 e4_2 g4_2 a4_6")                               -- Lacrimosa dies illa.
+      , (17, "f4_2 e4_2 g4_2 a4_6 d4_2 f4_2 e4_2 d4_2 c4_2 f4_2 e4_2 d4_6")                      -- Qua resurget es favilla.
+      , (18, "a4_2 c5_2 d5_2 c5_4 b4 a4 a4_2 g4 f4 g4_4 a4_2 a4_4 d4_6")                         -- Judicandus home reus.
+      , (19, "f4_2 e4_2 g4_2 a4_6 d4_2 f4_2 e4_2 d4_2 c4_2 f4_2 e4_2 d4_6")                      -- Huic ergo parce Deus.
+      , (20, "a4_2 g4_2 f4_2 e4_4 g4_2 g4_2 a4_6 f4_2 e4_2 g4_2 e4_2 d4_2 e4_4 f4_2 e4_2 d4_6")  -- Pie Jesu Domine dona eis requiem.
+      , (20, "c4_2 e4_2 f4_4 e4_2 d4_2 c4_6 d4_6 ~_2")                                           -- Amen.
+      , ( 0, "~_10")
+      ]
+
+:}
+
+:{
+
+let
+  test =
+    do
+      hush
+      d1 . fast 0.33
+         $ diesIrae
+         # sound "superpiano"
+
+:}
+

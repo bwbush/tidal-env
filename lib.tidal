@@ -1,0 +1,25 @@
+
+:script lib/clave-son.tidal
+
+:script lib/dies-irae.tidal
+
+:script lib/in-style.tidal
+
+:script lib/l-homme-arme.tidal
+
+:script lib/kalenda-maya.tidal
+
+test
+
+hush
+
+panic
+
+
+do
+  hush
+  d1 . fast 2.00 $ kalendaMaya # sound "supermandolin"  # gain 1.0
+  d2 . fast 2.00 $ lHommeArme  # sound "arpy"           # gain 0.8
+  d3 . fast 0.33 $ diesIrae    # sound "tink"           # gain 1.3
+  d4 . fast 0.25 $ claveSon    # sound "bin"            # gain 0.5
+
