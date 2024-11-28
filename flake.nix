@@ -8,10 +8,11 @@
       url = "github:ivan-abreu/didacticpatternvisualizer";
       flake = false;
     };
+    utils.url = "github:numtide/flake-utils";
   };
 
   outputs = inputs:
-    inputs.tidal.utils.eachSupportedSystem (system:
+    inputs.utils.lib.eachDefaultSystem (system:
       let
         pkgs = import inputs.nixpkgs { inherit system; overlays = [ inputs.tidal.overlays.tidal ]; };
         tidalpkgs = inputs.tidal.packages.${system};
@@ -89,7 +90,7 @@
                 alias tidalnvim="$(which nvim)"
               '';
               # Convenient access to a config providing all quarks required for Tidal.
-              SUPERDIRT_SCLANG_CONF = "${tidalpkgs.superdirt}/sclang_conf.yaml";
+            # SUPERDIRT_SCLANG_CONF = "${tidalpkgs.superdirt}/sclang_conf.yaml";
               OSCP5_LIB="${oscP5}/oscP5";
               DIDACTICPATTERNVISUALIZER_DIR="${didacticpatternvisualizer}/didacticpatternvisualizer";
             };
